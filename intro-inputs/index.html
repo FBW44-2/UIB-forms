@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inputs Intro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Inputs & Forms</h1>
+      </header>
+
+      <h2>Reddit Search</h2>
+      <form action="https://www.reddit.com/search/" method="get">
+        <label for="search">Search:</label>
+        <input type="search" name="q" id="search" placeholder="Reddit Search" />
+        <br />
+        <label for="sort">Sort by:</label>
+        <select name="sort" id="sort">
+          <option value="relevance">relevance</option>
+          <option value="hot">hot</option>
+          <option value="new">new</option>
+          <option value="comments">comments</option>
+        </select>
+        <br />
+        <input type="submit" value="Search" />
+      </form>
+
+      <h2>Form</h2>
+      <form action="https://www.google.com">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter Username"
+          required
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter password"
+          minlength="8"
+          required
+        />
+        <br />
+        <label for="age">Choose your age</label>
+        <input type="number" name="age" id="age" min="0" max="100" step="10" />
+        <br />
+        <textarea name="" id="">Comments or concerns?</textarea>
+        <br />
+        <p>Pick your favorite Beans:</p>
+        <label for="pinto">Pinto</label>
+        <input type="radio" name="beans" id="pinto" value="pinto" />
+        <label for="black">Black</label>
+        <input type="radio" name="beans" id="black" value="black" />
+        <label for="red">Red</label>
+        <input type="radio" name="beans" id="red" value="red" />
+        <br />
+        <input type="checkbox" name="subscribe" id="subscribe" checked />
+        <label for="subscribe">Subsriibe to our email list</label>
+        <button type="submit">Submit</button>
+      </form>
+
+      <h2>Text input</h2>
+      <label for="fname">First Name:</label>
+      <input type="text" name="fname" id="fname" placeholder="first name" />
+
+      <label for="lname">Last Name:</label>
+      <input type="text" name="lname" id="lname" placeholder="last name" />
+
+      <h2>Password Input</h2>
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" />
+
+      <h2>Email Input</h2>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" />
+
+      <h2>Color Input</h2>
+      <label for="color">Choose a color:</label>
+      <input type="color" name="color" id="color" />
+
+      <h2>Date Input</h2>
+      <label for="date">Date</label>
+      <input type="date" name="date" id="date" />
+
+      <h2>File Input</h2>
+      <label for="file">Choose a file:</label>
+      <input type="file" name="file" id="file" />
+      <!-- <label for="city">City:</label>
+      <input type="text" placeholder="city" id="city" name="city" /> -->
+    </main>
+  </body>
+</html>
